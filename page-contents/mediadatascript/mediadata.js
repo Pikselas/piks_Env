@@ -1,0 +1,4 @@
+var Json = {"DATASCRIPT-NAME": "exmp", "BANNER-TOP": "///D:/Coder Wallp/155-1559161_best-wallpaper-hd-find-best-latest-best-wallpaper.jpg", "BANNER-BOTTOM": "///D:/Coder Wallp/155-1559161_best-wallpaper-hd-find-best-latest-best-wallpaper.jpg", "VIDEO-POSTER": "///D:/Coder Wallp/1739.jpg", "VIDEO": "///E:/Vids/post_malone_swae_lee_sunflower_spider_man_into_the_spider_verse_ApXoWvfEYVU_1080p.mp4", "IMAGE_id": "exmp_frame_", "IMAGE": ["///D:/Coder Wallp/844.jpg", "///D:/Coder Wallp/988f17955f90f99fa1807d848b5fe96e-1000.jpg", "///D:/Coder Wallp/29822.jpg", "///D:/Coder Wallp/131843-new-new-york-background-1920x1080-for-xiaomi.jpg", "///D:/Coder Wallp/263823.jpg"]}
+var EditorOptions = {"VIEW-PERCENT": 50, "FOCUS": {"MODE": 3, "LEVEL": 1, "SELECT-INDEX": 4}}
+var SyncImV = {"IMAGE_ID": [], "VIDEO_TIME": []}
+var QuickView = {"FROM-TIME": [[0]], "TO-TIME": [[1]]}

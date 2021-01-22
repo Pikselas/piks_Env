@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tl">name-here</title>
+    <link rel="stylesheet" href="page-contents/style/mainpagestyle.css"/>
+</head>
+<body>
+    <div id="MainSection">
+    <!-- Banner Top-->
+    <div id = "BannerTop" class="NavBan">
+        <img alt="banner image"/>
+        <div>
+            <button class="EditorButton" title="Edit frames and quick views" onclick="startEdit()">Editor Mode:off</button>
+            <button class="PositiveButton" title= "Generate script based on the changes" style="display: none;" onclick="DownloadScript(0)">Generate script</button>
+            <a style="display: none;" download="">Download script</a>
+            <span style="display: none;" id = "sp1" onclick="SetQuickViewTime(event)" title="click to set start time">Start-time:<input type="text" placeholder="Start time"/></span>
+            <span style="display: none;"id = "sp2" onclick="SetQuickViewTime(event)" title="click to set end time">End-time:<input type="text" placeholder="End time">;</span>
+            <span id="QuickViewSelector"><button class="PositiveButton" onclick="InDqVc(-1)">-</button> view no:<b>1</b><button class="PositiveButton" onclick="InDqVc(1)">+</button></span>
+            <button class = "EditorButton" style="display: none;" onclick="SetQuickView()">Add_quick_view</button>
+            <button class="PositiveButton" onclick="RunQuickView()">RunQuickView:<b>FALSE</b></button>
+            <button  onclick="setscreen()">[*_*]</button>
+        </div>
+    </div>
+    <div>
+        <select id="focus" style="position: fixed;right: 5%;">
+            <option value="0" onclick="SetFocus(1,0.3)">
+                 focus on video
+            </option>
+            <option value="1" onclick="SetFocus(0,0.3)">
+                focus on image
+            </option>
+            <option value="2" onclick="SetFocus(2,0.3)">
+                focus on BOTH
+            </option>
+            <option value="3" onclick="SetFocus(3,0.3)">
+                focus on NONE
+            </option>
+            <option value="4" onclick="SetFocus(3,1)">
+                focus on EVERYTHING
+            </option>
+        </select>
+    </div>
+    <!--Banner Bottom-->
+    <div id = "BannerBottom" class="NavBan">
+        <img alt="banner image"/>
+        <input type="range" id="SetSizer" oninput="setSize()" title="change viewsize"/>
+        <input type="text" style="display: none;" placeholder="last added image"/>
+    </div>
+    <!--middle contents-->
+    <div id = "middle" class="MiddleSec">
+        <video id="VideoSection" controls></video>
+        <div id="ImageSection"></div>
+    </div>
+</div>
+    <script src="page-contents/loaders/variables.js">        </script>
+    <script src="page-contents/mediadatascript/mediadata.js"></script>
+    <script src="page-contents/loaders/functional.js">       </script>
+    <script src="page-contents/loaders/setter.js">           </script>
+</body>
+</html>
